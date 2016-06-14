@@ -3,20 +3,20 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Andrew Chapman</title>
-	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Fjalla+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-	<header class="main-header top">
+	<header class="main-header" id="top">
 		<div class="container clearfix">
-			<h1 class="header-name">Andrew Chapman</h1>
-			<ul class="main-nav">
+			<h1 class="name">Andrew Chapman</h1>
+			<ul class="main-nav nav-style">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Portfolio</a></li>
+				<li><a href="#portfolio-top">Portfolio</a></li>
 				<li><a href="#">Skills</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#contact-top">Contact</a></li>
 			</ul>
       <img class="profile-photo" src="img/profile-photo.png" alt="Picture of Andrew Chapman">
       <p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
@@ -25,11 +25,11 @@
 
 	<div class="container clearfix">
 
-  <div class="portfolio">
-    <p class="main-nav">Portfolio</p>
+  <div class="portfolio clearfix">
+    <p class="nav-style" id="portfolio-top">Portfolio</p>
 		<div class="marketing module">
       <img
-        src="img/portfolio-1.png"
+        src="img/marketing.png"
         alt="View of Marketing Page"
       />
       <h2>Marketing Page</h2>
@@ -38,27 +38,27 @@
 
 		<div class="search module">
       <img
-        src="img/portfolio-2.png"
+        src="img/search.png"
         alt="View of Search Page"
       />
       <h2>Search Page</h2>
-			<p>This projects searches through a specific database to find information that the user is trying to look up.</p>
+			<p>This project searches through a specific database to find information that the user is trying to look up.</p>
 		</div><!--/.search-->
 
 
     <div class="travel module">
       <img
-        src="img/portfolio-3.png"
+        src="img/travel.png"
         alt="View of Travel App"
       />
       <h2>Travel App</h2>
-      <p>This projects compares travel times based on different transportation methods and tells you the best one.</p>
+      <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
     </div><!--/.travel-->
 
 
     <div class="map module">
       <img
-        src="img/portfolio-4.png"
+        src="img/map.png"
         alt="View of Map App"
       />
       <h2>Map of Favorite Spots</h2>
@@ -67,16 +67,16 @@
 
     <div class="photo module">
       <img
-        src="img/portfolio-5.png"
+        src="img/gallery.png"
         alt="View of Photo Gallery"
       />
       <h2>Photo Gallery</h2>
-      <p>This projects shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+      <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
     </div><!--/.photo-->
 
     <div class="calculator module">
       <img
-        src="img/portfolio-6.png"
+        src="img/calculator.png"
         alt="View of Sales Page"
       />
       <h2>Calculator</h2>
@@ -85,26 +85,29 @@
 
   </div><!--/.portfolio-->
 
-  <div class="contact">
-
-    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <p>Phone: <strong>+1(111)555-1234</strong></p>
-    <p>Email: <strong>email@yoursite.com</strong></p>
-
-  </div>
-
   </div><!--/.container-->
 
 	<footer class="main-footer clearfix">
-		<h1 class="name n-bottom">Andrew Chapman</h1>
+
+    <div class="contact-details">
+
+      <p class="nav-style" id="contact-top">Contact</p>
+
+      <p class="contact-statement">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+      <p id="phone">Phone: <strong>+1(111)555-1234</strong></p>
+      <p id="email">Email: <strong>email@yoursite.com</strong></p>
+
+    </div>
+	
+		<h1 class="name" id="name-bottom">Andrew Chapman</h1>
     <ul class="back-to-top-nav">
       <li><a href="#top">BACK TO TOP</a></li>
     </ul>
     <ul class="footer-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Portfolio</a></li>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#portfolio-top">Portfolio</a></li>
       <li><a href="#">Skills</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#contact-top">Contact</a></li>
     </ul>
 	</footer>
 

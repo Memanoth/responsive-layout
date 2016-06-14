@@ -7,36 +7,60 @@
 }
 
 body {
-	font-family: 'Varela Round', sans-serif;
-  line-height: 1.5em;
-	color: #7e7c7c;
-}
+  	margin: 0;
+  	padding: 0;
+  	text-align: center;
+  	font-family: 'Montserrat', sans-serif;
+  	line-height: 1.5;
+  	color: #b4b4b4;
+  	font-size: 0.85em;
+	background-color: #fafafa;
+	}
 
+h1,
+h2 {
+	color: #4e4e4e;
+  	font-family: 'Fjalla One', sans-serif;
+	}
+	
 h1 {
-  margin: 0;
-}
+	font-size: 1.5em;
+	margin: 1em 0;
+	}
 
-p {
-	font-size: .95em;
-	margin-bottom: 1.8em;
-}
+h2 {
+	font-size: 1.3em;
+  	margin-bottom: -1em;
+	}
 
 a {
 	text-decoration: none;
-}
+	font-weight: 800;
+	text-transform: uppercase;
+	}
+
+a:link {
+  	color: #4e4e4e;	
+	}
+
+a:visited {
+ 	color: #4e4e4e;	
+	}
 
 img {
-	max-width: 100%;
-}
+  	max-width: 100%;
+  	margin-top: 15px;
+	}
 
 li {
-  list-style-type: none;
-  padding: 0;
-}
+  	list-style-type: none;
+  	padding: 0;
+	}
 
 ul {
-  padding: 0;
-}
+  	padding: 0;
+	}
+
 
 /* =================================
   Base Layout Styles
@@ -44,59 +68,269 @@ ul {
 
 /* ---- Navigation ---- */
 
-.header-name,
-.main-nav {
-  text-align: center;
-}
+.name,
+.nav-style {
+  	text-align: center;
+	color: #4e4e4e;
+	text-transform: uppercase;
+	}
 
-.main-nav {
-  text-transform: uppercase;
-}
-.main-nav li {
-  display: block;
-  background-color: white;
-  padding: 0.5em;
-  margin: 5px 0;
-}
+.nav-style,
+#portfolio-top,
+#contact-top {
+  	font-weight: 800;
+	}
+	
+.main-nav a {
+	background-color: #fff;
+	padding: 10px 15px;
+	margin: 5px 0;
+	}
+
+.main-nav a,
+.main-footer a {
+	display: block;
+	}
 
 /* ---- Layout Containers ---- */
 
-.main-header {
-  background-color: #fafafa;
-  padding: 25px 0;
-}
-
 .container {
-  padding-right: 1em;
-	padding-left: 1em;
-  text-align: center;
-}
-
-.contact {
-  padding: 0 0.5em;
-  border-bottom: 1px solid grey;
-}
+  	text-align: center;
+	}
+	
+.main-header {
+  	background-color: #fafafa;
+  	padding: 0 1em 25px 1em;
+	}
+	
+.portfolio {
+  	padding: 1em;
+	background-color: #fff;
+	}
+	
+.main-footer {
+  	padding: 0 1em;
+  	background-color: #fafafa;
+	}
+	
+.module {
+	margin-bottom: 20px;
+	}
 
 /* ---- Page Elements ---- */
 
 .intro {
-  color: #b7b4b4;
-}
+  	font-size: 14px;
+	color: #b7b4b4;
+	}
 
-.portfolio {
-  padding: 1em 0;
-}
+.module p {
+	color: #6e6e6e;
+	margin: 30px 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
 
 .profile-photo {
-  padding: 1em 2.5em;
-}
+  	padding: 0 2.5em;
+	}
 
-.main-footer {
-  padding: 0 1em;
-}
+#portfolio-top {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	}
+	
+#contact-top {
+	padding-top: 50px;
+	padding-bottom: 25px;
+	}
+	
+#email strong,
+#phone strong {
+	color: #6e6e6e;
+	}
+	
+.contact-details {
+	border-bottom: #b7b4b4 1px solid;
+	padding-bottom: 25px;
+	}
+	
+#name-bottom,
+.back-to-top-nav {
+	width: 50%;
+	font-size: 0.85rem;
+	display: float;
+	padding: 10px 0;
+	float: left;
+	}
+
+#name-bottom {
+	text-align: left;
+	}
+	
+.back-to-top-nav {
+	text-align: right;
+	}
+	
+.footer-nav {
+  	display: none;
+	}
+
 
 
 
 /* =================================
   Media Queries
 ==================================== */
+
+@media (min-width: 768px) {
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.5rem;
+	}
+
+.main-nav {
+	margin-bottom: 25px;
+	}
+	
+.main-nav li {
+	display: inline-block;
+	}
+	
+.main-nav a {
+	background-color: #fafafa;
+	}
+	
+.profile-photo,
+.intro {
+	display: float;
+	width: 50%;
+	}
+
+.profile-photo {
+	float: right;
+	padding-right: 0;
+	}
+	
+.intro {
+	font-size: 1.43em;
+	text-align: left;
+	line-height: 1.4rem;
+	padding-top: 10px;
+	}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  	background-color: #fafafa;
+  	padding: 25px 2em;
+	
+	}
+
+.container {
+ 	margin: 0 auto;
+  	text-align: center;
+	}
+	
+.main-footer {
+  	margin: 0 auto;
+	padding: 0 2em;
+  	background-color: #fafafa;
+	}
+
+
+/* ---- Page Elements ---- */
+
+.module {
+	width: 50%;
+	display: float;
+	float: left;
+	padding: 0 5px;
+	position: relative;
+	margin-bottom: 125px;
+	}
+
+.module p {
+	display: block;
+	position: absolute
+	}
+
+.back-to-top-nav {
+	display: none;
+	}
+
+.contact-details {
+	padding: 0 12.5%;
+	padding-bottom: 50px;
+	}
+	
+.contact-details p {
+	font-size: 1.3em;
+	}
+	
+.contact-statement {
+	margin-bottom: 35px;
+	}
+
+#contact-top {
+	font-size: 0.85rem;
+	}
+
+.footer-nav {
+	display: block;
+	display: float;
+	padding: 10px 0;
+	}
+	
+.footer-nav li {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 0 5px;
+	margin-bottom: 50px;
+	}
+	
+	
+
+}
+
+@media (min-width: 1024px) {
+	
+/* =================================
+  Base Element Styles
+==================================== */
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+/* ---- Layout Containers ---- */
+
+
+/* ---- Page Elements ---- */
+	
+}
+
+/* =================================
+ Clearfix
+==================================== */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+	}
