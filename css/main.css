@@ -159,9 +159,9 @@ ul {
 .back-to-top-nav {
 	width: 50%;
 	font-size: 0.85rem;
-	display: float;
-	padding: 10px 0;
+	padding: 25px 0;
 	float: left;
+	margin-top: 0;
 	}
 
 #name-bottom {
@@ -177,18 +177,13 @@ ul {
 	}
 
 
-
-
 /* =================================
   Media Queries
 ==================================== */
 
+
+
 @media (min-width: 768px) {
-
-/* =================================
-  Base Element Styles
-==================================== */
-
 
 /* =================================
   Base Layout Styles
@@ -214,7 +209,6 @@ ul {
 	
 .profile-photo,
 .intro {
-	display: float;
 	width: 50%;
 	}
 
@@ -226,35 +220,58 @@ ul {
 .intro {
 	font-size: 1.43em;
 	text-align: left;
-	line-height: 1.4rem;
 	padding-top: 10px;
+	}
+
+.footer-nav {
+	display: inline;
+	width: 70%;
+	}
+
+.footer-nav a {
+	display: block;
+	padding: 10px 0 10px 10px;
+	margin-left: 10px;
+	margin-top: 5px;
+	}
+	
+.footer-nav li {
+	display: inline-block;
+	margin-bottom: 50px;
 	}
 
 /* ---- Layout Containers ---- */
 
-.main-header {
-  	background-color: #fafafa;
-  	padding: 25px 2em;
-	
-	}
-
 .container {
  	margin: 0 auto;
-  	text-align: center;
 	}
-	
+
+.main-header {
+  	background-color: #fafafa;
+  	padding: 25px 2em 50px;
+	}
+
+.portfolio {
+	padding-left: 2em;
+	padding-right: 2em;
+	}
+
 .main-footer {
   	margin: 0 auto;
 	padding: 0 2em;
   	background-color: #fafafa;
+	text-align: right;
 	}
 
 
 /* ---- Page Elements ---- */
 
+.main-header div {
+	padding: 0 5px;
+	}
+
 .module {
 	width: 50%;
-	display: float;
 	float: left;
 	padding: 0 5px;
 	position: relative;
@@ -273,6 +290,7 @@ ul {
 .contact-details {
 	padding: 0 12.5%;
 	padding-bottom: 50px;
+	text-align: center;
 	}
 	
 .contact-details p {
@@ -287,19 +305,11 @@ ul {
 	font-size: 0.85rem;
 	}
 
-.footer-nav {
-	display: block;
-	display: float;
+#name-bottom {
+	margin: 5px 0;
 	padding: 10px 0;
-	}
-	
-.footer-nav li {
-	display: inline-block;
-	margin: 0 5px;
-	padding: 0 5px;
-	margin-bottom: 50px;
-	}
-	
+	width: 30%;
+	}	
 	
 
 }
@@ -317,9 +327,53 @@ ul {
 
 /* ---- Navigation ---- */
 
+.main-header div {
+	padding: 0 2em;
+	}
+	
+.name {
+	float: left;
+	margin-top: 0;
+	padding-left: 5px;
+	}
+
+.main-nav {
+	text-align: right;
+	}
+	
+.main-nav a {
+	padding: 10px 5px 10px 25px;
+	}
+	
+.profile-photo {
+	padding-right: 5px;
+	}
+	
+.intro {
+	padding-left: 5px;
+	}
+	
+.footer-nav {
+	text-align: right;
+	}
+
 
 /* ---- Layout Containers ---- */
 
+.main-header,
+.main-footer {
+	max-width: 1150px;
+	margin: 0 auto;
+	}
+
+.container {
+	max-width: 1150px;
+	padding: 0 2em;
+	}
+	
+.module {
+	width: 33.3333%;
+	}
 
 /* ---- Page Elements ---- */
 	
