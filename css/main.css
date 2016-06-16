@@ -1,390 +1,191 @@
-/* =================================
-  Base Element Styles
-==================================== */
+/**** MOBILE FIST ****/
+
+/* BASE ELEMENT STYLES */
 
 * {
 	box-sizing: border-box;
-}
-
-body {
-  	margin: 0;
-  	padding: 0;
-  	text-align: center;
-  	font-family: 'Montserrat', sans-serif;
-  	line-height: 1.5;
-  	color: #b4b4b4;
-  	font-size: 0.85em;
-	background-color: #fafafa;
-	}
-
-h1,
-h2 {
-	color: #4e4e4e;
-  	font-family: 'Fjalla One', sans-serif;
 	}
 	
-h1 {
-	font-size: 1.5em;
-	margin: 1em 0;
+body {
+	text-align: center;
+	font-family: 'Montserrat', 'sans-serif';
+	font-size: 0.85rem;
+	line-height: 1.5;
 	}
-
+	
+h1,
 h2 {
-	font-size: 1.3em;
-  	margin-bottom: -1em;
+	font-family: 'Fjalla One', 'sans-serif';
+	margin: 0;
 	}
 
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	
 a {
 	text-decoration: none;
 	font-weight: 800;
 	text-transform: uppercase;
 	}
-
-a:link {
-  	color: #4e4e4e;	
-	}
-
-a:visited {
- 	color: #4e4e4e;	
-	}
-
+	
 img {
-  	max-width: 100%;
-  	margin-top: 15px;
-	}
-
-li {
-  	list-style-type: none;
-  	padding: 0;
-	}
-
-ul {
-  	padding: 0;
+	max-width: 100%;
 	}
 
 
-/* =================================
-  Base Layout Styles
-==================================== */
 
-/* ---- Navigation ---- */
-
-.name,
-.nav-style {
-  	text-align: center;
-	color: #4e4e4e;
-	text-transform: uppercase;
-	}
-
-.nav-style,
-#portfolio-top,
-#contact-top {
-  	font-weight: 800;
-	}
-	
-.main-nav a {
-	background-color: #fff;
-	padding: 10px 15px;
-	margin: 5px 0;
-	}
-
-.main-nav a,
-.main-footer a {
-	display: block;
-	}
-
-/* ---- Layout Containers ---- */
-
-.container {
-  	text-align: center;
-	}
-	
-.main-header {
-  	background-color: #fafafa;
-  	padding: 0 1em 25px 1em;
-	}
-	
-.portfolio {
-  	padding: 1em;
-	background-color: #fff;
-	}
-	
-.main-footer {
-  	padding: 0 1em;
-  	background-color: #fafafa;
-	}
-	
-.module {
-	margin-bottom: 20px;
-	}
-
-/* ---- Page Elements ---- */
-
-.intro {
-  	font-size: 14px;
-	color: #b7b4b4;
-	}
-
-.module p {
-	color: #6e6e6e;
-	margin: 30px 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	}
-
-.profile-photo {
-  	padding: 0 2.5em;
-	}
-
-#portfolio-top {
-	padding-bottom: 15px;
-	padding-top: 15px;
-	}
-	
-#contact-top {
-	padding-top: 50px;
-	padding-bottom: 25px;
-	}
-	
-#email strong,
-#phone strong {
-	color: #6e6e6e;
-	}
-	
-.contact-details {
-	border-bottom: #b7b4b4 1px solid;
-	padding-bottom: 25px;
-	}
-	
-#name-bottom,
-.back-to-top-nav {
-	width: 50%;
-	font-size: 0.85rem;
-	padding: 25px 0;
-	float: left;
-	margin-top: 0;
-	}
-
-#name-bottom {
-	text-align: left;
-	}
-	
-.back-to-top-nav {
-	text-align: right;
-	}
-	
-.footer-nav {
-  	display: none;
-	}
-
-
-/* =================================
-  Media Queries
-==================================== */
-
-
-
-@media (min-width: 768px) {
-
-/* =================================
-  Base Layout Styles
-==================================== */
-
-/* ---- Navigation ---- */
-
-.name {
-	font-size: 1.5rem;
-	}
+/* NAVIGATION */
 
 .main-nav {
 	margin-bottom: 25px;
 	}
-	
-.main-nav li {
-	display: inline-block;
-	}
-	
-.main-nav a {
-	background-color: #fafafa;
-	}
-	
-.profile-photo,
-.intro {
-	width: 50%;
-	}
 
-.profile-photo {
-	float: right;
-	padding-right: 0;
-	}
-	
-.intro {
-	font-size: 1.43em;
-	text-align: left;
-	padding-top: 10px;
-	}
-
-.footer-nav {
-	display: inline;
-	width: 70%;
-	}
-
-.footer-nav a {
+.main-nav a,
+.footer-nav a,
+.footer-name {
 	display: block;
-	padding: 10px 0 10px 10px;
-	margin-left: 10px;
-	margin-top: 5px;
-	}
-	
-.footer-nav li {
-	display: inline-block;
-	margin-bottom: 50px;
+	margin: 5px 0;
+	padding: 10px 15px;
 	}
 
-/* ---- Layout Containers ---- */
-
-.container {
- 	margin: 0 auto;
+.footer-name {
+	float: left;
+	font-size: 0.85rem;
+	margin-left: 0;
+	padding-left: 0;
 	}
 
-.main-header {
-  	background-color: #fafafa;
-  	padding: 25px 2em 50px;
-	}
-
-.portfolio {
-	padding-left: 2em;
-	padding-right: 2em;
-	}
-
-.main-footer {
-  	margin: 0 auto;
-	padding: 0 2em;
-  	background-color: #fafafa;
+#back-to-top {
 	text-align: right;
 	}
 
-
-/* ---- Page Elements ---- */
-
-.main-header div {
-	padding: 0 5px;
+#back-to-top a {
+	margin-right: 0;
+	padding-right: 0;
 	}
 
-.module {
-	width: 50%;
-	float: left;
-	padding: 0 5px;
-	position: relative;
-	margin-bottom: 125px;
-	}
-
-.module p {
-	display: block;
-	position: absolute
-	}
-
-.back-to-top-nav {
+#main-footer-nav {
 	display: none;
 	}
 
-.contact-details {
-	padding: 0 12.5%;
-	padding-bottom: 50px;
-	text-align: center;
-	}
-	
-.contact-details p {
-	font-size: 1.3em;
-	}
-	
-.contact-statement {
-	margin-bottom: 35px;
-	}
+/* LAYOUT STYLES */
 
-#contact-top {
-	font-size: 0.85rem;
-	}
-
-#name-bottom {
-	margin: 5px 0;
-	padding: 10px 0;
-	width: 30%;
-	}	
-	
-
-}
-
-@media (min-width: 1024px) {
-	
-/* =================================
-  Base Element Styles
-==================================== */
-
-
-/* =================================
-  Base Layout Styles
-==================================== */
-
-/* ---- Navigation ---- */
-
-.main-header div {
-	padding: 0 2em;
-	}
-	
-.name {
-	float: left;
-	margin-top: 0;
-	padding-left: 5px;
-	}
-
-.main-nav {
-	text-align: right;
-	}
-	
-.main-nav a {
-	padding: 10px 5px 10px 25px;
-	}
-	
-.profile-photo {
-	padding-right: 5px;
-	}
-	
-.intro {
-	padding-left: 5px;
-	}
-	
-.footer-nav {
-	text-align: right;
-	}
-
-
-/* ---- Layout Containers ---- */
-
-.main-header,
-.main-footer {
-	max-width: 1150px;
-	margin: 0 auto;
+.main-header {
+	padding-bottom: 25px;
 	}
 
 .container {
-	max-width: 1150px;
-	padding: 0 2em;
-	}
-	
-.module {
-	width: 33.3333%;
+	margin: 0 auto;
+	max-width: 90%;
 	}
 
-/* ---- Page Elements ---- */
+.portfolio-module {
+	margin-bottom: 30px;
+	}
+
+.main-footer {
+	padding-top: 25px;
+	}
 	
-}
+	
 
-/* =================================
- Clearfix
-==================================== */
+/* INDIVIDUAL ELEMENT STYLES */
 
-.clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
+
+.header-name {
+	padding: 15px 0;
+	}
+
+.profile-photo {
+	width: 70%;
+	}
+
+.intro,
+.contact-blurb,
+.phone,
+.email {
+	font-size: 0.9rem;
+	}
+
+.section-title {
+	display: block;
+	text-transform: uppercase;
+	font-weight: 800;
+	padding: 25px 0;
+	}
+	
+.portfolio-module h2 {
+	margin-top: 20px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	}
+
+#contact {
+	padding-bottom: 25px;
+	border-bottom: solid 1px;
+	}
+
+
+/* COLORS */
+
+body {
+	background-color: #fff;
+	color: #b4b4b4;
+	}
+
+h1,
+h2 {
+	color: #4e4e4e;
+	}
+
+a {
+	color: #4e4e4e;
+	}
+
+.main-header,
+.main-header .container {
+	background-color: #fafafa;
+	}
+
+.main-nav a {
+	background-color: #fff;
+	}
+
+.container {
+	background-color: #fff;
+	}
+
+.portfolio-module {
+	color: #6e6e6e;
+	}
+
+.section-title {
+	color: #4e4e4e;
+	}
+
+.main-footer,
+.main-footer .container {
+	background-color: #fafafa;
+	}
+	
+#contact {
+	border-bottom-color: #e4e4e4;
+	}
+	
+.phone strong,
+.email strong {
+	color: #7e7e7e;
+	}
+
+/**** MEDIA QUERIES ****/
+
+@media (min-width: 768px) {
+	
+	}
+	
+@media (min-width: 1024px) {
+	
 	}
