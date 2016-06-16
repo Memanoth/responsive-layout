@@ -79,7 +79,7 @@ img {
 
 .container {
 	margin: 0 auto;
-	max-width: 90%;
+	width: 90%;
 	}
 
 .portfolio-module {
@@ -184,8 +184,167 @@ a {
 
 @media (min-width: 768px) {
 	
+/* NAVIGATION */
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+
+#main-footer-nav {
+	display: block;
+	text-align: right;
 	}
 	
+#main-footer-nav li {
+	display: inline-block;
+	}
+	
+#main-footer-nav a{
+	padding-right: 0;
+	padding-left: 10px;
+	margin-left: 10px;
+	}
+	
+#back-to-top {
+	display: none;
+	}
+	
+
+/* PAGE LAYOUT */
+
+.profile-photo {
+	width: 40%;
+	}
+
+.profile-photo {
+	float: right;
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	
+.intro {
+	width: 60%;
+	text-align: left;
+	padding-right: 5px;
+	}
+
+.portfolio-module {
+	width: 50%;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 80px;
+	position: relative;
+	}
+
+#contact {
+	margin: 0 auto;
+	}
+	
+.contact-blurb,
+.email,
+.phone {
+	margin: 0 auto 30px;
+	width: 70%;
+	}
+
+.phone {
+	margin: 0 auto 15px;
+	}
+	
+.email {
+	margin: 0 auto 35px;
+	}
+	
+#main-footer-nav {
+	padding-bottom: 50px;
+	}
+/* INDIVIDUAL ELEMENT STYLES */
+
+.intro,
+.contact-blurb,
+.email,
+.phone {
+	font-size: 1rem;
+	}
+
+.portfolio-module p {
+	position: absolute;
+	}
+
+
+/* COLORS */
+
+.main-header a {
+	background-color: #fafafa;
+	}
+	
+}
+	
+
 @media (min-width: 1024px) {
-	
+
+/* NAVIGATION */
+
+.header-name {
+	float: left;
 	}
+	
+.main-nav {
+	text-align: right;
+	padding-top: 15px;
+	}
+	
+.main-nav a {
+	padding-right: 0;
+	}
+
+/* LAYOUT STYLES */
+
+.container {
+	max-width: 1150px;
+	width: 95%;
+	padding: 0 2%;
+	}
+
+.portfolio-module {
+	width: 33.333%
+	}
+
+.contact-blurb,
+.email,
+.phone {
+	width: 60%;
+	}
+
+/* INDIVIDUAL ELEMENT STYLES */
+
+.intro,
+.contact-blurb,
+.phone,
+.email {
+	font-size: 1.1rem;
+	}
+	
+.intro {
+	padding-right: 40px;
+	}
+
+/* COLORS */
+
+body {
+	background-color: #fafafa;
+	}
+
+	}
+	
+/**** CLEARFIX ****/
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+	}
+	
