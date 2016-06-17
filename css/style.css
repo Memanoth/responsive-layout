@@ -71,6 +71,8 @@ img {
 	display: none;
 	}
 
+
+
 /* LAYOUT STYLES */
 
 .main-header {
@@ -110,6 +112,10 @@ img {
 	font-size: 0.9rem;
 	}
 
+#portfolio-container {
+	border-bottom: solid 1px;
+	}
+
 .section-title {
 	display: block;
 	text-transform: uppercase;
@@ -127,35 +133,49 @@ img {
 	padding-bottom: 25px;
 	border-bottom: solid 1px;
 	}
+	
+.phone strong,
+.email strong {
+	padding-left: 5px;
+	}
 
 
 /* COLORS */
 
 body {
-	background-color: #fff;
-	color: #b4b4b4;
+	background-color: #efefef;
+	color: #efefef;
 	}
 
-h1,
+h1 {
+	color: #efefef;
+	}
+
 h2 {
 	color: #4e4e4e;
 	}
 
-a {
-	color: #4e4e4e;
+.main-header,
+.main-footer {
+	background-color: rgba(0, 58, 119, 0.8);
 	}
 
-.main-header,
-.main-header .container {
-	background-color: #fafafa;
+.main-header .container,
+.main-footer .container {
+	background-color: rgba(255, 255, 255, 0);
 	}
 
 .main-nav a {
-	background-color: #fff;
+	background-color: #efefef;
+	color: #003a66;
 	}
 
 .container {
-	background-color: #fff;
+	background-color: #efefef;
+	}
+
+#portfolio-container {
+	border-bottom-color: #003a77;
 	}
 
 .portfolio-module {
@@ -166,9 +186,8 @@ a {
 	color: #4e4e4e;
 	}
 
-.main-footer,
-.main-footer .container {
-	background-color: #fafafa;
+.main-footer p{
+	color: #efefef;
 	}
 	
 #contact {
@@ -177,7 +196,11 @@ a {
 	
 .phone strong,
 .email strong {
-	color: #7e7e7e;
+	color: #bfbfbf;
+	}
+	
+.footer-nav a {
+	color: #efefef;
 	}
 
 /**** MEDIA QUERIES ****/
@@ -185,6 +208,10 @@ a {
 @media (min-width: 768px) {
 	
 /* NAVIGATION */
+
+.main-header {
+	padding-bottom: 50px;
+	}
 
 .main-nav li {
 	display: inline-block;
@@ -195,6 +222,7 @@ a {
 #main-footer-nav {
 	display: block;
 	text-align: right;
+	padding-bottom: 50px;
 	}
 	
 #main-footer-nav li {
@@ -210,6 +238,7 @@ a {
 #back-to-top {
 	display: none;
 	}
+	
 	
 
 /* PAGE LAYOUT */
@@ -258,9 +287,7 @@ a {
 	margin: 0 auto 35px;
 	}
 	
-#main-footer-nav {
-	padding-bottom: 50px;
-	}
+
 /* INDIVIDUAL ELEMENT STYLES */
 
 .intro,
@@ -279,6 +306,11 @@ a {
 
 .main-header a {
 	background-color: #fafafa;
+	}
+	
+.main-nav a {
+	background-color: rgba(0, 0, 0, 0);
+	color: #efefef;
 	}
 	
 }
@@ -331,14 +363,23 @@ a {
 .intro {
 	padding-right: 40px;
 	}
+	
+#portfolio-container {
+	border-bottom: none;
+	}
 
 /* COLORS */
 
 body {
-	background-color: #fafafa;
+	background-color: rgba(0, 58, 119, 0.8);
 	}
 
+.main-header,
+.main-footer {
+	background-color: rgba(0, 58, 119, 0);
 	}
+	
+}
 	
 /**** CLEARFIX ****/
 
